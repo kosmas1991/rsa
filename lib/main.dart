@@ -63,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               return SingleChildScrollView(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                         'private key PEM: \n\n${help.encodePrivateKeyToPemPKCS1(keyPair.privateKey as crypto.RSAPrivateKey)}'),
